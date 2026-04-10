@@ -15,7 +15,7 @@
 .to-do-app {
   width: 100%;
   max-width: 540px;
-  background: white;
+  background: rgb(255, 255, 255);
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
@@ -53,7 +53,7 @@
   font-weight: 14px;
 }
 
-button {
+.row button {
   border: none;
   outline: none;
   padding: 16px 50px;
@@ -62,4 +62,23 @@ button {
   border-radius: 40px;
   font-size: 16px;
   cursor: pointer;
+}
+
+ul li {
+  display: flex;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  align-items: center;
+  padding: 0;
+}
+li button {
+  border: none;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  background: white;
 }
