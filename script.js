@@ -1,10 +1,13 @@
-function toggleMode(button) {
-  const img = button.querySelector("img")
-  img.classList.toggle("untoggle")
+const inputBox = document.querySelector(".input-box")
+const listContainer = document.querySelector("#list-container")
 
-  if (img.classList.contains("untoggle")) {
-    img.setAttribute("src", "./assets/unchecked.png")
-  } else {
-    img.setAttribute("src", "./assets/checked.png")
-  }
+function addTask() {
+    if (inputBox.value === "") {
+      alert("You must write something!")
+    }  
+    else {
+      let li = document.createElement("li")
+      li.innerHTML = inputBox.value
+      listContainer.appendChild(li)
+    }
 }
