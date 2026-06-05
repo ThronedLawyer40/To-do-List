@@ -66,6 +66,8 @@
 
 ul li {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   font-size: 17px;
   padding: 12px 8px 12px 50px;
@@ -86,7 +88,7 @@ ul li::before {
   left: 8px;
 }
 
-ul li.checked {
+ul li.checked .pc {
   color: #555;
   text-decoration: line-through;
 }
