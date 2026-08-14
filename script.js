@@ -40,7 +40,7 @@ listContainer.addEventListener("click",
 
       const listP = delet.target.closest("li")
       const pList = document.querySelector(".pc")
-      const pContainer = document.querySelector(".p-container")
+      const closestContainer = delet.target.closest("li").querySelector(".p-container")
 
       if (delet.target.classList.contains("delete-button")) {
       listP.remove()
@@ -49,7 +49,7 @@ listContainer.addEventListener("click",
       if (delet.target.classList.contains("edit-button")) {
         let inputEdit = document.createElement("input")
         inputEdit.value = pList.textContent
-        pContainer.appendChild(inputEdit)
+        closestContainer.appendChild(inputEdit)
 
         pList.remove()
 
